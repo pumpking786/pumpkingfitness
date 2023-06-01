@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="icon" href="image/roar.png">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pumpking's fitness</title>
+</head>
+<link href="http://fonts.cdnfonts.com/css/baloo-bhai" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+<style>
+    /* css reset */
+    body{
+        font-family: 'Baloo Bhai', sans-serif;
+        color: white;
+        margin:0px;
+        padding:0px;
+        background:url('image/fitness.jpg');
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-size: 100% 115%;
+    }
+    .left{
+        position: absolute;
+        left: 40px;
+        top: 20px;
+        display: inline-block;
+    }
+    .left img{
+        width: 180px;
+       
+    }
+    .left div{
+        font-size: 20px;
+        text-align: center;
+    }
+    .mid{
+        display: block;
+        width: 50%;
+        margin: 27px auto;
+    }
+    .right{
+        position: absolute;
+        right: 34px;
+        top: 36px;
+        display: inline-block;
+    }
+    .navbar{
+        display: inline-block;
+    }
+    .navbar li{
+        display: inline-block;
+        font-size: 25px;
+    }
+    .navbar li a{
+        color: blue;
+        text-decoration: none;
+        padding: 34px 23px;
+    }
+    .navbar li a:hover, .navbar li a.active{
+        text-decoration: underline;
+        color: grey;
+    }
+    .btn{
+        margin: 0px 9px;
+        padding: 4px 14px;
+        border: 2px solid gray;
+        border-radius: 5px;
+        font-size: 20px;
+    }
+    .btn:hover{
+        background-color: rgb(203, 196, 196);
+    }
+    .container{
+        border: 2px solid white;
+        margin: 85px 80px;
+        display: block;
+        padding: 75px;
+        border-radius: 28px;
+    }
+    .form-group input{
+        font-family: 'Baloo Bhai', sans-serif;
+        text-align: center;
+        display: block;
+        width:508px;
+        padding: 4px;
+        border: 2px solid black;
+        margin: 11px auto;
+        font-size: 20px;
+        border-radius: 8px;
+    }
+    .form-group label{
+        font-family: 'Baloo Bhai', sans-serif;
+        text-align: center;
+        display: block;
+        width:508px;
+        padding: 4px;
+        margin: 0px auto;
+        font-size: 20px;
+    }
+    .container h1{
+        text-align: center;
+        color: black;
+    }
+    .container button{
+        display: block;
+        width: 40%;
+        margin: 25px auto;
+    }
+</style>
+<body>
+    <header class="header">
+        <div class="left">
+            <img src="image/dumbbell.jpg" alt="">
+            <div>PUMPKING FITNESS</div>
+        </div>
+        <div class="mid">
+            <ul class="navbar">
+                <li><a href="#"class="active">Home</a> </li>
+                <li><a href="#">About Us</a> </li>
+                <li><a href="#">Fitness calculator</a></li>
+                <li><a href="#">Contact Us</a> </li>
+            </ul>
+        </div>
+        <div class="right">
+            <button class="btn">Call us now</button>
+            <button class="btn">Email us</button>
+        </div>
+    </header>
+    <div class="container">
+        <h1>Join the best GYM in Nepal </h1>
+        <form action="connect.php" method="post">
+            <div class="form-group">
+                <input type="text" name="name" placeholder="Enter your name">
+            
+            <div class="form-group">
+                <input type="text" name="age" placeholder="Enter your age">
+            </div>
+            <div class="form-group">
+                <label for="email">Gender</label>
+                <div>
+                <label for="male" class="radio-inline"><input type="radio" name="gender" value="m" id="male">male</label>
+                <label for="female" class="radio-inline"><input type="radio" name="gender" value="f" id="female">female</label>
+                <label for="others" class="radio-inline"><input type="radio" name="gender" value="o" id="others">others</label>                
+                </div>
+            </div>
+            <div class="form-group">
+                <input type="text" name="locality" placeholder="Enter your locality">
+            </div>
+            <button class="btn">Submit</button>
+        </form>
+    </div>
+</body>
+</html>
