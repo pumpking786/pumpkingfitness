@@ -132,21 +132,21 @@
         <h1>Join the best GYM in Nepal </h1>
         <form action="connect.php" method="post">
             <div class="form-group">
-                <input type="text" name="name" placeholder="Enter your name">
+                <input type="text" required name="name" placeholder="Enter your name">
             
             <div class="form-group">
-                <input type="text" name="age" placeholder="Enter your age">
+                <input type="number" required name="age" placeholder="Enter your age">
             </div>
             <div class="form-group">
-                <label for="email">Gender</label>
+                <label for="email" >Gender</label>
                 <div>
-                <label for="male" class="radio-inline"><input type="radio" name="gender" value="m" id="male">male</label>
+                <label for="male" class="radio-inline"><input type="radio" required name="gender" value="m" id="male">male</label>
                 <label for="female" class="radio-inline"><input type="radio" name="gender" value="f" id="female">female</label>
                 <label for="others" class="radio-inline"><input type="radio" name="gender" value="o" id="others">others</label>                
                 </div>
             </div>
             <div class="form-group">
-                <input type="text" name="locality" placeholder="Enter your locality">
+                <input type="text" required name="locality" placeholder="Enter your locality">
             </div>
             <button class="btn">Submit</button>
         </form>
